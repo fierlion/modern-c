@@ -7,4 +7,4 @@ CC=c99
 $(P): $(OBJECTS)
 
 clean:
-	rm -f glist glis.o
+	rm -f glist glist.o
