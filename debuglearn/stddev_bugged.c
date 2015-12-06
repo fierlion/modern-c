@@ -14,7 +14,7 @@ meanvar mean_and_var(const double *data){
     long double ratio;
     size_t count= 0;
     for(size_t i=0;  !isnan(data[i]); i++){
-        ratio = count/(count+1);
+        ratio = count/(count+1.0);
         count ++;
         avg   *= ratio;
         avg2  *= ratio;
