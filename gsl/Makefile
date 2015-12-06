@@ -1,8 +1,10 @@
 P=gsl_erf
 OBJECTS=
 CFLAGS= -g -O3
-LDLIBS=-lgsl
-LDADD=-L/usr/local/Cellar/gsl/1.16/lib
+LDLIBS=`pkg-config --libs gsl`
 CC=c99
 
 $(P): $(OBJECTS)
+
+clean:
+	rm -f gsl_erf
