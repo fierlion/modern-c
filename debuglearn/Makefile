@@ -1,6 +1,6 @@
 P=stddev_bugged
 OBJECTS=stddev_bugged.o
-LDLIBS=
+LDLIBS= -lm
 CFLAGS= -g -Wall -O0
 CC=c99
 
